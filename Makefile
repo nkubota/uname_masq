@@ -5,7 +5,6 @@ KERNEL_TREE ?= /lib/modules/$(KERNEL_SOURCE_VERSION)/build
 EXTRA_CFLAGS += -I$(KERNEL_TREE)/include/ -I$(KERNEL_TREE)/include/linux 
 
 obj-m += uname_masq.o
-#uname_masq-objs := uname_masq.o
 
 .PHONY: all
 all: modules
